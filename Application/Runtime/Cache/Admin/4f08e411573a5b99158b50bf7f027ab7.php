@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/think/Public/Admin/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/think/Public/Admin/css/info-mgt.css">
-    <link rel="stylesheet" type="text/css" href="/think/Public/Admin/css/WdatePicker.css">
+    <link rel="stylesheet" type="text/css" href="/ThinkPHP/Public/Admin/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/ThinkPHP/Public/Admin/css/info-mgt.css">
+    <link rel="stylesheet" type="text/css" href="/ThinkPHP/Public/Admin/css/WdatePicker.css">
     <title>移动办公自动化系统</title>
 </head>
 <body>
@@ -42,7 +42,7 @@
                     <td class="time"><?php echo ($vol["remark"]); ?></td>
                     <td class="operate">
                     <input type="checkbox" class="deptid" value="<?php echo ($vol["id"]); ?>">
-                    <a href="/think/index.php/Admin/Dept/edit/id/<?php echo ($vol["id"]); ?>">编辑</a>
+                    <a href="/ThinkPHP/index.php/Admin/Dept/edit/id/<?php echo ($vol["id"]); ?>">编辑</a>
                     </td>
                 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -51,10 +51,10 @@
 </div>
 <div class="pagination ue-clear"></div>
 </body>
-<script src="/think/Public/Admin/js/jquery.js"></script>
-<script src="/think/Public/Admin/js/common.js"></script>
-<script src="/think/Public/Admin/js/WdatePicker.js"></script>
-<script src="/think/Public/Admin/js/jquery.pagination.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/jquery.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/common.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/WdatePicker.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/jquery.pagination.js"></script>
 <script>
     $(".select-title").on("click",function(){
         $(".select-list").hide();
@@ -87,7 +87,7 @@
             //去掉最后的逗号
             id = id.substring(0,id.length-1);
             console.log(id);
-            window.location.href="/think/index.php/Admin/Dept/del/id/" + id;
+            window.location.href="/ThinkPHP/index.php/Admin/Dept/del/id/" + id;
         })
     })
 </script>

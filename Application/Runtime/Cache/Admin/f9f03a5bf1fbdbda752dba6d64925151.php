@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/think/Public/Admin/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/think/Public/Admin/css/info-mgt.css">
-    <link rel="stylesheet" type="text/css" href="/think/Public/Admin/css/WdatePicker.css">
+    <link rel="stylesheet" type="text/css" href="/ThinkPHP/Public/Admin/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/ThinkPHP/Public/Admin/css/info-mgt.css">
+    <link rel="stylesheet" type="text/css" href="/ThinkPHP/Public/Admin/css/WdatePicker.css">
     <title>移动办公自动化系统</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <a href="javascript:;" class="add">添加</a>
     <a href="javascript:;" class="del">删除</a>
     <a href="javascript:;" class="edit">编辑</a>
-    <a href="/think/index.php/Admin/User/charts" class="count">统计</a>
+    <a href="/ThinkPHP/index.php/Admin/User/charts" class="count">统计</a>
     <a href="javascript:;" class="check">审核</a>
 </div>
 <div class="table-box">
@@ -43,7 +43,7 @@
                     <td class="time"><?php echo ($vol["remark"]); ?></td>
                     <td class="operate">
                     <input type="checkbox" class="deptid" value="<?php echo ($vol["id"]); ?>">
-                    <a href="/think/index.php/Admin/User/edit/id/<?php echo ($vol["id"]); ?>">编辑</a>
+                    <a href="/ThinkPHP/index.php/Admin/User/edit/id/<?php echo ($vol["id"]); ?>">编辑</a>
                     </td> -->
                     <td class="num"><?php echo ($vol["id"]); ?></td>
                     <td class="name"><?php echo ($vol["username"]); ?></td>
@@ -67,10 +67,10 @@
     <div class="pxofy">显示第1条到10条记录，总共<?php echo ($count); ?>条记录</div>
 </div>
 </body>
-<script src="/think/Public/Admin/js/jquery.js"></script>
-<script src="/think/Public/Admin/js/common.js"></script>
-<script src="/think/Public/Admin/js/WdatePicker.js"></script>
-<script src="/think/Public/Admin/js/jquery.pagination.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/jquery.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/common.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/WdatePicker.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/jquery.pagination.js"></script>
 <script>
     $(".select-title").on("click",function(){
         $(".select-list").hide();
@@ -103,7 +103,7 @@
             //去掉最后的逗号
             id = id.substring(0,id.length-1);
             console.log(id);
-            window.location.href="/think/index.php/Admin/User/del/id/" + id;
+            window.location.href="/ThinkPHP/index.php/Admin/User/del/id/" + id;
         })
     })
 </script>

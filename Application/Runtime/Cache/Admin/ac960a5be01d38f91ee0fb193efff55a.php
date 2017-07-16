@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="/think/Public/Admin/css/base.css" />
-<link rel="stylesheet" href="/think/Public/Admin/css/info-reg.css" />
+<link rel="stylesheet" href="/ThinkPHP/Public/Admin/css/base.css" />
+<link rel="stylesheet" href="/ThinkPHP/Public/Admin/css/info-reg.css" />
     <title>Document</title>
 </head>
 <body>
@@ -38,9 +38,9 @@
     </div>
 </form>
 </body>
-<script src="/think/Public/Admin/js/jquery.js"></script>
-<script src="/think/Public/Admin/js/common.js"></script>
-<script src="/think/Public/Admin/js/WdatePicker.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/jquery.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/common.js"></script>
+<script src="/ThinkPHP/Public/Admin/js/WdatePicker.js"></script>
 <script>
 $(".select-title").on("click",function(){
     $(".select-list").toggle();

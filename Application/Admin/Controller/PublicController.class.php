@@ -18,7 +18,8 @@ class PublicController extends Controller{
 	public function captcha(){
 		//配置
 		$cfg =array(
-			'fontSize' =>12,
+			'fontSize' => 12,
+			'useImgBg' => false
 			'useCurve' => false,
 			'useNoise' => false,
 			'imageH' => 35,
