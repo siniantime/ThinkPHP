@@ -72,7 +72,7 @@ class DeptController extends Controller{
 		//$data = $model -> select();//查询全部
 		//$data =$model -> select('1,2');
 
-		$data=$model->find(2);
+		//$data=$model->find(2);
 		//打印
 		dump($data);
 	}

@@ -10,6 +10,7 @@ class PublicController extends Controller{
 	public function login(){
 		
 		$this->display();
+		//$this ->fetch();
 		//$str = $this->fetch();
 		//dump打印
 		//dump($str);
@@ -19,7 +20,7 @@ class PublicController extends Controller{
 		//配置
 		$cfg =array(
 			'fontSize' => 12,
-			'useImgBg' => false
+			'useImgBg' => false,
 			'useCurve' => false,
 			'useNoise' => false,
 			'imageH' => 35,
@@ -53,6 +54,8 @@ class PublicController extends Controller{
 				//存在用户
 				session('id',$data['id']);
 				session('username',$data['username']);
+				//$session=
+				dump(session('username'));die();
 				session('role_id',$data['role_id']);
 				//跳转
 				$this -> success('登录成功',U('Index/index'),3);
