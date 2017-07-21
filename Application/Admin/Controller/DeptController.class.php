@@ -69,7 +69,7 @@ class DeptController extends Controller{
 	public function chaxun(){
 		//实例化模型
 		$model=M('dept');
-		//$data = $model -> select();//查询全部
+		$data = $model -> select();//查询全部
 		//$data =$model -> select('1,2');
 
 		//$data=$model->find(2);

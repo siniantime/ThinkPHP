@@ -48,4 +48,10 @@ class TestController extends Controller{
 		$result = $model -> field('t1.*,t2.name as deptname') ->alias('t1') ->join('left join sp_dept as t2 on t1.pid= t2.id') -> select();
 		dump($result);
 	}
+
+	public function test45(){
+		$stu =M('user');
+		$stu -> select();
+		dump($stu);
+	}
 }
