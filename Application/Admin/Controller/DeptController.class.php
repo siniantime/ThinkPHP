@@ -96,7 +96,7 @@ class DeptController extends Controller{
 		//模型实例化
 		$model = M('Dept');
 		//查询
-		$data=$model ->order('sort asc') ->  select();
+		$data=$model ->  select();//进行了排序
 		//二次遍历顶级部门
 		foreach ($data as $key => $value) {
 			# 查询pid对应的部门信息
@@ -104,11 +104,17 @@ class DeptController extends Controller{
 				# code...
 				$info = $model -> find($value['pid']);
 				//只需要保留其中的name
+				//dump($data[$key]);
 				$data[$key]['deptname']=$info['name'];
 			}
 		}
+		//dump($data); die();
 		//dump($data);
-		$this ->assign('data',$data);
+		//load('@/tree');
+		//$data = getTree($data);
+		//dump($data);die();
+		$this ->assign('data',$data);//对模版变量赋值
+		//dump($data);die();
 		//展示模版
 		$this->display();
 	}
